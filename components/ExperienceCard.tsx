@@ -33,9 +33,9 @@ export default function ExperienceCard({
       <p className="text-gray-700">{description}</p>
 
       <div className="flex flex-wrap">
-        {skills.map((item) => (
+        {skills.map((item, index) => (
           <span
-            key={item}
+            key={index}
             className="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded-sm mr-2 mb-2"
           >
             {item}
